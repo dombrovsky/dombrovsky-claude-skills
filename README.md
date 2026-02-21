@@ -27,7 +27,19 @@ Refer to the [Claude Code documentation](https://docs.claude.ai/claude-code) for
 
 ## Available Skills
 
-(Skills will be listed here as they are added)
+### git-atomic-workflow
+Atomic commit workflow for feature branches with fixup commits, interactive rebase, and clean history maintenance.
+
+**Features:**
+- Atomic commit principles and guidelines
+- Fixup commit workflow with autosquash
+- Branch synchronization with rebase (not merge)
+- Safety checks (protected branches, multiple authors, merge detection)
+- PR review comment handling
+- Conflict avoidance strategies
+- Partial file staging for multiple fixups
+
+[Documentation](skills/git-atomic-workflow/README.md) | [Examples](examples/git-atomic-workflow-example.md)
 
 ## Contributing
 

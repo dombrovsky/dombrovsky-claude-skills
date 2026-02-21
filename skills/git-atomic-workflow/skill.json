@@ -1,0 +1,23 @@
+{
+  "name": "git-atomic-workflow",
+  "version": "1.0.0",
+  "description": "Atomic commit workflow for feature branches with fixup commits, interactive rebase, and clean history maintenance",
+  "author": "Volodymyr Dombrovskyi",
+  "type": "prompt",
+  "triggers": [
+    "commit",
+    "git commit",
+    "fixup",
+    "rebase",
+    "clean history",
+    "git history",
+    "amend",
+    "squash",
+    "push changes",
+    "stage",
+    "git add",
+    "sync",
+    "update branch"
+  ],
+  "commands": []
+}
