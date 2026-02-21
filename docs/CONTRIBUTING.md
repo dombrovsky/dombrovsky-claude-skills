@@ -1,34 +1,52 @@
-# Contributing Guidelines
+# Contributing
 
-This is a personal repository for custom Claude skills and plugins.
+This is a personal repository for custom Claude Code skills. While it's primarily for personal use, you're welcome to fork and adapt for your own needs.
 
-## Adding New Skills
+## Using These Skills
 
-1. Create a new directory under `skills/` with a descriptive name
-2. Follow the structure outlined in [CREATING_SKILLS.md](CREATING_SKILLS.md)
-3. Include comprehensive documentation
-4. Test thoroughly before committing
+Install all skills from this repository:
+```bash
+claude skills install github:dombrovsky/dombrovsky-claude-skills
+```
 
-## Code Style
+Or fork and customize for your own workflow.
 
-- Use clear, descriptive names for commands and parameters
-- Include comments for complex logic
-- Keep functions focused and modular
-- Follow language-specific best practices
+## Creating Your Own Skills
 
-## Documentation
+See [CREATING_SKILLS.md](CREATING_SKILLS.md) for a complete guide following the official [Agent Skills specification](https://agentskills.io/specification).
 
-- Update the main README.md when adding new skills
-- Include usage examples in skill READMEs
-- Document all parameters and their types
-- Provide troubleshooting guidance where applicable
+### Quick Start
 
-## Commit Messages
+1. Create a new directory under `skills/` with your skill name
+2. Add `SKILL.md` with YAML frontmatter and instructions
+3. Test the skill with Claude Code
+4. Add to `.claude-plugin/marketplace.json` if publishing
 
-- Use clear, descriptive commit messages
-- Reference related issues when applicable
-- Use conventional commit format when possible
+### Skill Structure
+
+```
+my-skill/
+├── SKILL.md          # Required: YAML frontmatter + instructions
+├── README.md         # Optional: User documentation
+├── scripts/          # Optional: Executable code
+├── references/       # Optional: Detailed docs (loaded on demand)
+└── assets/           # Optional: Templates, data, diagrams
+```
+
+## Pull Requests
+
+This is a personal repo, but if you have improvements or bug fixes:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes following the skill format
+4. Test thoroughly
+5. Submit a PR with clear description
 
 ## Questions or Issues
 
-Open an issue for discussion before major changes.
+Open an issue for questions or to report problems with existing skills.
+
+## License
+
+MIT - See LICENSE file for details.
