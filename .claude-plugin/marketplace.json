@@ -1,0 +1,22 @@
+{
+  "name": "dombrovsky-claude-skills",
+  "owner": {
+    "name": "Volodymyr Dombrovskyi"
+  },
+  "metadata": {
+    "description": "Personal collection of Claude Code skills for development workflows",
+    "version": "1.0.0",
+    "repository": "https://github.com/dombrovsky/dombrovsky-claude-skills"
+  },
+  "plugins": [
+    {
+      "name": "git-atomic-workflow",
+      "description": "Git workflow and history management skills including atomic commits, fixup workflow, and clean history maintenance",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/git-atomic-workflow"
+      ]
+    }
+  ]
+}

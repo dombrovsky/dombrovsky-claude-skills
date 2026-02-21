@@ -1,49 +1,39 @@
-# Claude Skills & Plugins
+# Claude Code Skills
 
-A personal collection of custom skills and plugins for Claude Code.
+Personal collection of development workflow skills for Claude Code.
 
-## Repository Structure
+## Installation
 
-```
-.
-├── skills/          # Custom skills for Claude
-├── docs/            # Documentation and guides
-├── examples/        # Example implementations
-└── shared/          # Shared utilities and helpers
+```bash
+claude skills install github:dombrovsky/dombrovsky-claude-skills
 ```
 
-## Getting Started
+Or manually:
+```bash
+git clone https://github.com/dombrovsky/dombrovsky-claude-skills.git
+cp -r dombrovsky-claude-skills/skills/git-atomic-workflow ~/.claude-code/skills/
+```
 
-### Creating a New Skill
-
-1. Create a new directory under `skills/` with your skill name
-2. Add a `skill.json` manifest file
-3. Implement your skill functionality
-4. Document usage in the skill's README
-
-### Installing Skills
-
-Refer to the [Claude Code documentation](https://docs.claude.ai/claude-code) for instructions on installing custom skills.
-
-## Available Skills
+## Skills
 
 ### git-atomic-workflow
-Atomic commit workflow for feature branches with fixup commits, interactive rebase, and clean history maintenance.
 
-**Features:**
-- Atomic commit principles and guidelines
-- Fixup commit workflow with autosquash
-- Branch synchronization with rebase (not merge)
-- Safety checks (protected branches, multiple authors, merge detection)
-- PR review comment handling
-- Conflict avoidance strategies
-- Partial file staging for multiple fixups
+Maintains clean git history using atomic commits, fixup workflow, and interactive rebase with autosquash.
 
-[Documentation](skills/git-atomic-workflow/README.md) | [Examples](examples/git-atomic-workflow-example.md)
+**What it does:**
+- Guides atomic commit creation (one logical change per commit)
+- Creates fixup commits for small fixes to previous commits
+- Uses `git rebase -i --autosquash` to clean up history
+- Syncs feature branches with main using rebase (not merge)
+- Detects unsafe scenarios (protected branches, multiple authors, existing merges)
 
-## Contributing
+**When to use:**
+- Creating commits
+- Fixing earlier commits
+- Cleaning up history before PR
+- Syncing branch with main
 
-This is a personal repository, but feel free to fork and adapt for your own use.
+[Full Documentation](skills/git-atomic-workflow/README.md) • [Examples](examples/git-atomic-workflow-example.md)
 
 ## License
 
