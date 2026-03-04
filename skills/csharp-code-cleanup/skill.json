@@ -1,0 +1,25 @@
+{
+  "name": "csharp-code-cleanup",
+  "version": "1.0.0",
+  "description": "Automated C# code cleanup using ReSharper CLI to fix StyleCop violations, format C# code, and maintain consistent code style in .NET projects. Detects SA#### violations from build output and offers to fix them using ReSharper cleanup profiles. C# ONLY - not for other languages.",
+  "author": "Volodymyr Dombrovskyi",
+  "type": "prompt",
+  "triggers": [
+    "csharp code cleanup",
+    "c# code cleanup",
+    "resharper cleanup",
+    "stylecop fix",
+    "format csharp",
+    "format c#",
+    "fix violations",
+    "SA####",
+    "csharp code style",
+    "dotnet format",
+    "cleanup csharp"
+  ],
+  "commands": [
+    "/csharp-cleanup",
+    "/resharper-cleanup",
+    "/stylecop-fix"
+  ]
+}

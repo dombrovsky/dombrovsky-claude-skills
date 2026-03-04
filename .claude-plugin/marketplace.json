@@ -17,6 +17,15 @@
       "skills": [
         "./skills/git-atomic-workflow"
       ]
+    },
+    {
+      "name": "csharp-code-cleanup",
+      "description": "Automated C# code cleanup using ReSharper CLI to fix StyleCop violations, format C# code, and maintain consistent code style in .NET projects. C# ONLY.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/csharp-code-cleanup"
+      ]
     }
   ]
 }
